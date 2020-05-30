@@ -19,4 +19,5 @@ If you used MkModal, I'd be very grateful if you <a href='mailto:kiku@kikusole.c
 ## Bugs and contributing
 
 Caught a mistake or want to contribute to the documentation?
+
 Please report bugs via GitHub or [contact me](https://kikusole.cat/contacta/) or <a href='mailto:kiku@kikusole.cat'>email me</a>.
