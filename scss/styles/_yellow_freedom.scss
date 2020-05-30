@@ -1,0 +1,57 @@
+// Settings
+$yellow-freedom-overlay-background: rgba(#fded11, .95);
+$yellow-freedom-container-background: #fff;
+$yellow-freedom-text-color: #222;
+$yellow-freedom-titles-color: #fde511;
+$yellow-freedom-form-input-border: 1px solid rgba(#222, .2);
+$yellow-freedom-form-input-focus-border: 1px solid #fde511;
+$yellow-freedom-button-background-color: #fde511;
+$yellow-freedom-button-color: #222;
+$yellow-freedom-button-border: 1px solid #fde511;
+$yellow-freedom-button-hover-background-color: #ffeb35;
+$yellow-freedom-button-hover-border: 1px solid #ffeb35;
+$yellow-freedom-close-modal-fill: #222;
+
+
+.k-yellow-freedom {
+    background-color: $yellow-freedom-overlay-background;
+    .k-container, .k-ajax-container  {
+        background-color: $yellow-freedom-container-background;
+        color: $yellow-freedom-text-color;
+        h1, h2, h3, h4, h5, h6 {
+            color: $yellow-freedom-titles-color;
+        }
+        form {
+            input, textarea {
+                border: $yellow-freedom-form-input-border;
+                &:focus {
+                    border: $yellow-freedom-form-input-focus-border;
+                }
+            }
+            input[tupe="submit"], button[type="submit"] {
+                background-color: $yellow-freedom-button-background-color;
+                color: $yellow-freedom-button-color;
+                border: $yellow-freedom-button-border;
+                &:hover {
+                    background-color: $yellow-freedom-button-hover-background-color;
+                    border: $yellow-freedom-button-hover-border;
+                }
+            }
+        }
+        .add-close-btn {
+            background-color: $yellow-freedom-button-background-color;
+            color: $yellow-freedom-button-color;
+            border: $yellow-freedom-button-border;
+            &:hover {
+                background-color: $yellow-freedom-button-hover-background-color;
+                border: $yellow-freedom-button-hover-border;
+            }
+        }
+    }
+    // Close Button
+    .close-btn {
+        svg {
+            fill: $yellow-freedom-close-modal-fill;
+        }
+    }
+}

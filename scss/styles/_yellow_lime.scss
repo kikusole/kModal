@@ -1,0 +1,57 @@
+// Settings
+$yellow-lime-overlay-background: rgba(#cbe945, .95);
+$yellow-lime-container-background: #f0f0f0;
+$yellow-lime-text-color: #0d0d0d;
+$yellow-lime-titles-color: #afcf20;
+$yellow-lime-form-input-border: 1px solid rgba(#0d0d0d, .2);
+$yellow-lime-form-input-focus-border: 1px solid #afcf20;
+$yellow-lime-button-background-color: #afcf20;
+$yellow-lime-button-color: #fff;
+$yellow-lime-button-border: 1px solid #afcf20;
+$yellow-lime-button-hover-background-color: #88a507;
+$yellow-lime-button-hover-border: 1px solid #88a507;
+$yellow-lime-close-modal-fill: #fff;
+
+
+.k-yellow-lime {
+    background-color: $yellow-lime-overlay-background;
+    .k-container, .k-ajax-container  {
+        background-color: $yellow-lime-container-background;
+        color: $yellow-lime-text-color;
+        h1, h2, h3, h4, h5, h6 {
+            color: $yellow-lime-titles-color;
+        }
+        form {
+            input, textarea {
+                border: $yellow-lime-form-input-border;
+                &:focus {
+                    border: $yellow-lime-form-input-focus-border;
+                }
+            }
+            input[tupe="submit"], button[type="submit"] {
+                background-color: $yellow-lime-button-background-color;
+                color: $yellow-lime-button-color;
+                border: $yellow-lime-button-border;
+                &:hover {
+                    background-color: $yellow-lime-button-hover-background-color;
+                    border: $yellow-lime-button-hover-border;
+                }
+            }
+        }
+        .add-close-btn {
+            background-color: $yellow-lime-button-background-color;
+            color: $yellow-lime-button-color;
+            border: $yellow-lime-button-border;
+            &:hover {
+                background-color: $yellow-lime-button-hover-background-color;
+                border: $yellow-lime-button-hover-border;
+            }
+        }
+    }
+    // Close Button
+    .close-btn {
+        svg {
+            fill: $yellow-lime-close-modal-fill;
+        }
+    }
+}

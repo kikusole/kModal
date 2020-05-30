@@ -1,0 +1,230 @@
+/*!
+    Name: kModal
+    URL: http://dev.kikusole.cat/kmodal
+    Version: 1.0.1
+    Author: Kiku Solé
+    Author URL: https://kikusole.cat
+*/
+
+// Imports
+@import 'settings';
+@import 'animations';
+
+// Modal
+.k-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    display: none;
+    background-color: $overlay-background;
+    cursor: pointer;
+    .k-container, .k-ajax-container  {
+        max-width: $container-width;
+        max-height: calc(100vh - 4rem);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $container-background;
+        color: $text-color;
+        padding: $container-padding;
+        border-radius: $container-border-radius;
+        overflow-Y: scroll;
+        cursor: default;
+        h1, h2, h3, h4, h5, h6 {
+            color: $titles-color;
+        }
+        h1 {
+            font-size: $modal-h1-title;
+        }
+        h2 {
+            font-size: $modal-h2-title;
+        }
+        h3 {
+            font-size: $modal-h3-title;
+        }
+        h4 {
+            font-size: $modal-h4-title;
+        }
+        h5 {
+            font-size: $modal-h5-title;
+        }
+        h6 {
+            font-size: $modal-h6-title;
+        }
+        form {
+            width: $form-width;
+            padding: $form-padding;
+            margin: $form-margin;
+            display: block;
+            fieldset {
+                display: block;
+                padding: $form-fieldset-padding;
+                margin: $form-fieldset-margin;
+            }
+            label {
+                display: block;
+                font-weight: $form-label-font-weight;
+                margin: $form-label-margin;
+                padding: $form-label-padding;
+                line-height: 1;
+            }
+            input, textarea {
+                width: $form-input-width;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border-radius: $form-input-border-radius;
+                margin: $form-input-border-margin;
+                border: $form-input-border;
+                padding: $form-input-border-padding;
+                outline: $form-input-outline;
+                background-color: transparent;
+                transition: all ease .3s;
+                &:focus {
+                    border: $form-input-focus-border;
+                    outline: $form-input-focus-outline;
+                    -webkit-box-shadow:none;
+                    box-shadow: none;
+                    transition: all ease .3s;
+                }
+            }
+            input[tupe="submit"], button[type="submit"] {
+                width: $button-width;
+                position: relative;
+                display: inline-block;
+                background-color: $button-background-color;
+                color: $button-color;
+                padding: $button-padding;
+                border-radius: $button-border-radius;
+                font-weight: $button-font-weight;
+                transition: all ease .3s;
+                border: $button-border;
+                cursor: pointer;
+                &:hover {
+                    transition: all ease .3s;
+                    background-color: $button-hover-background-color;
+                    border: $button-hover-border;
+                }
+            }
+        }
+        .add-close-btn {
+            width: $button-width;
+            position: relative;
+            display: inline-block;
+            background-color: $button-background-color;
+            color: $button-color;
+            padding: $button-padding;
+            border-radius: $button-border-radius;
+            font-weight: $button-font-weight;
+            transition: all ease .3s;
+            border: $button-border;
+            cursor: pointer;
+            &:hover {
+                transition: all ease .3s;
+                background-color: $button-hover-background-color;
+                border: $button-hover-border;
+            }
+        }
+    }
+    .k-image-container {
+        width: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: inline-block;
+        img {
+            max-width: 90vw;
+            max-height: 85vh;
+        }
+    }
+    .k-embed-container {
+        width: $container-embed-width;
+        height: $container-embed-height;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        iframe {
+            min-width: 700px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media (max-width: 1000px) {
+        .k-container {
+            width: $container-md-width;
+            max-height: calc(100vh - 3rem - 45px);
+            top: calc(50% + 1rem + 15px);
+            padding: $container-md-padding;
+        }
+        .k-embed-container {
+            width: 90vw;
+            height: calc(90vw / 18 * 9);
+            max-height: auto;
+            iframe {
+                min-width: auto;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .k-container {
+            width: $container-sm-width;
+            padding: $container-sm-padding;
+        }
+    }
+}
+
+// Roles Styles
+.k-error {
+    .k-container {
+        background-color: $error-background-color;
+        color: $error-color;
+        h1, h2, h3, h4, h5, h6 {
+            color: $error-color;
+        }
+    }
+}
+.k-success {
+    .k-container {
+        background-color: $success-background-color;
+        color: $success-color;
+        h1, h2, h3, h4, h5, h6 {
+            color: $success-color;
+        }
+    }
+}
+
+// Opened Modal
+.openedModal {
+    display: block;
+}
+
+// Close Button
+.close-btn {
+    width: $close-modal-size;
+    height: $close-modal-size;
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    cursor: pointer;
+    transition: all ease .3s;
+    svg {
+        fill: $close-modal-fill;
+        width: $close-modal-size;
+        height: $close-modal-size;
+        pointer-events: none;
+    }
+    &:hover {
+        transition: all ease .3s;
+        transform: scale(.9);
+        opacity: .7;
+    }
+}
+
+// Import styles
+@import 'styles';

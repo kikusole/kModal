@@ -1,0 +1,57 @@
+// Settings
+$fancy-blue-overlay-background: rgba(#187cda, .95);
+$fancy-blue-container-background: #fff;
+$fancy-blue-text-color: #2c2c2c;
+$fancy-blue-titles-color: #187cda;
+$fancy-blue-form-input-border: 1px solid rgba(#000, .2);
+$fancy-blue-form-input-focus-border: 1px solid #187cda;
+$fancy-blue-button-background-color: #187cda;
+$fancy-blue-button-color: #fff;
+$fancy-blue-button-border: 1px solid #187cda;
+$fancy-blue-button-hover-background-color: #0958a1;
+$fancy-blue-button-hover-border: 1px solid #187cda;
+$fancy-blue-close-modal-fill: #fff;
+
+
+.k-fancy-blue {
+    background-color: $fancy-blue-overlay-background;
+    .k-container, .k-ajax-container  {
+        background-color: $fancy-blue-container-background;
+        color: $fancy-blue-text-color;
+        h1, h2, h3, h4, h5, h6 {
+            color: $fancy-blue-titles-color;
+        }
+        form {
+            input, textarea {
+                border: $fancy-blue-form-input-border;
+                &:focus {
+                    border: $fancy-blue-form-input-focus-border;
+                }
+            }
+            input[tupe="submit"], button[type="submit"] {
+                background-color: $fancy-blue-button-background-color;
+                color: $fancy-blue-button-color;
+                border: $fancy-blue-button-border;
+                &:hover {
+                    background-color: $fancy-blue-button-hover-background-color;
+                    border: $fancy-blue-button-hover-border;
+                }
+            }
+        }
+        .add-close-btn {
+            background-color: $fancy-blue-button-background-color;
+            color: $fancy-blue-button-color;
+            border: $fancy-blue-button-border;
+            &:hover {
+                background-color: $fancy-blue-button-hover-background-color;
+                border: $fancy-blue-button-hover-border;
+            }
+        }
+    }
+    // Close Button
+    .close-btn {
+        svg {
+            fill: $fancy-blue-close-modal-fill;
+        }
+    }
+}

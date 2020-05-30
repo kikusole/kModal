@@ -1,0 +1,65 @@
+// Settings
+
+// Modal Colors
+$overlay-opacity: .85 !default; // Overlay Screen Opacity
+$overlay-color: #000 !default; // Overlay Screen Color
+$overlay-background: rgba($overlay-color, $overlay-opacity) !default; // Overlay Screen Result
+$container-background: #fff !default; // Container Background Color
+$text-color: #000 !default; // Text Color
+$titles-color: #000 !default; // Text Color
+$close-modal-fill: #fff !default; // Close modal icon color
+$error-color: #da0019 !default; // Error text color
+$error-background-color: #fde6ea !default; // Error background-color
+$success-color: #3a9703 !default; // Success text color
+$success-background-color: #eff8e9 !default; // Success background-color
+
+// Font Sizes
+$close-modal-size: 25px !default;
+$modal-font-size: 16px !default;
+$modal-h1-title: 36px !default;
+$modal-h2-title: 32px !default;
+$modal-h3-title: 28px !default;
+$modal-h4-title: 24px !default;
+$modal-h5-title: 22px !default;
+$modal-h6-title: 18px !default;
+
+// Container Structure
+$container-width: 900px !default; // Default max Width
+$container-md-width: 90% !default; // Tablet max Width
+$container-sm-width: calc(100% - 2rem) !default; // Mobile max Width
+$container-padding: 3rem !default; // Container Padding
+$container-md-padding: 2rem !default; // Tablet Container Padding
+$container-sm-padding: 1.5rem !default; // Mobile Container Padding
+$container-embed-width: 900px !default; // Embed max Width
+$container-embed-height: 550px !default; // Embed max Height
+$container-border-radius: 5px !default; // Container Border Radius
+
+// Form
+$form-width: 100% !default;
+$form-margin: .5rem 0 !default;
+$form-padding: 0 !default;
+$form-fieldset-padding: 0 !default;
+$form-fieldset-margin: .5rem 0 !default;
+$form-input-width: 300px !default; // Form Width
+$form-input-border: 1px solid rgba(#000, .2) !default; // Input/Textarea Border
+$form-input-border-radius: 0 !default;  // Input/Textarea Border Radius
+$form-input-border-margin: .5rem 0 !default;  // Input/Textarea Margin
+$form-input-border-padding: .4rem .5rem !default;  // Input/Textarea Padding
+$form-input-outline: 0 !default;  // Input/Textarea Outline
+$form-input-focus-border: 1px solid #000 !default; // Input/Textarea focus Border
+$form-input-focus-outline: 0 !default; // Input/Textarea focus Outline
+$form-label-font-weight: 500 !default; // Label Font Weight
+$form-label-margin: .5rem 0 0 0 !default; // Label Margin
+$form-label-padding: .4rem 0 !default; // Label Padding
+
+// Buttons and input[type="submit"]
+$button-width: auto !default;
+$button-background-color: #2c2c2c !default; // Button background color
+$button-hover-background-color: #000 !default; // Button background hover color
+$button-color: #fff !default; // Button text color
+$button-border-radius: 5px !default; // Button Border Radius
+$button-border: 1px solid #2c2c2c !default; // Button Border Color
+$button-hover-border: 1px solid #000 !default;
+$button-padding: .4rem 1rem !default; // Button Padding
+$button-margin: 0 !default; // Button Margin
+$button-font-weight: 700 !default; // Font Weight
